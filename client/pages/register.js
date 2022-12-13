@@ -15,7 +15,7 @@ const Register = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post(`/api/user`,user).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+    axios.post(`http://localhost:8000/api/register`,user).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
   }
 
   return (
